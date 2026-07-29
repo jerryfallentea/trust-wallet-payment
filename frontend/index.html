@@ -32,32 +32,18 @@
         Live rate &nbsp;·&nbsp; 1 BTC ≈ <strong id="btc-rate">loading…</strong> USDT
       </div>
 
-      <div class="field-group">
-        <label>You send</label>
-        <div class="field">
-          <input type="number" id="btc-amount" value="0.0015" step="0.0001" min="0.0001" />
-          <span class="token">
-            <svg width="18" height="18" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#F7931A"/><path d="M22.1 14.1c.3-2-1.2-3-3.3-3.7l.7-2.7-1.6-.4-.7 2.6-.6-.2.7-2.6-1.6-.4-.7 2.7-1.3-.3-2.2-.5-.4 1.7s1.2.3 1.1.3c.6.2.7.6.7.9l-1.7 6.9c-.1.2-.3.5-.8.4 0 0-1.1-.3-1.1-.3l-.8 1.8 2.1.5.6.2-.7 2.7 1.6.4.7-2.7.6.2-.7 2.6 1.6.4.7-2.7c2.9.5 5.1.3 6-2.3.7-2-.03-3.2-1.5-3.9.9-.3 1.6-.9 1.8-2.2zm-3.2 4.5c-.5 2-3.9.9-5 .6l.9-3.5c1.1.3 4.6.8 4.1 2.9zm.5-4.5c-.5 1.8-3.3.9-4.3.7l.8-3.2c.9.2 3.9.7 3.5 2.5z" fill="#fff"/></svg>
-            BTC
-          </span>
+      <div class="swap-pair">
+        <div class="symbol-box">
+          <svg width="36" height="36" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#F7931A"/><path d="M22.1 14.1c.3-2-1.2-3-3.3-3.7l.7-2.7-1.6-.4-.7 2.6-.6-.2.7-2.6-1.6-.4-.7 2.7-1.3-.3-2.2-.5-.4 1.7s1.2.3 1.1.3c.6.2.7.6.7.9l-1.7 6.9c-.1.2-.3.5-.8.4 0 0-1.1-.3-1.1-.3l-.8 1.8 2.1.5.6.2-.7 2.7 1.6.4.7-2.7.6.2-.7 2.6 1.6.4.7-2.7c2.9.5 5.1.3 6-2.3.7-2-.03-3.2-1.5-3.9.9-.3 1.6-.9 1.8-2.2zm-3.2 4.5c-.5 2-3.9.9-5 .6l.9-3.5c1.1.3 4.6.8 4.1 2.9zm.5-4.5c-.5 1.8-3.3.9-4.3.7l.8-3.2c.9.2 3.9.7 3.5 2.5z" fill="#fff"/></svg>
+          <span>BTC</span>
         </div>
-        <p class="field-note">Network: BNB Smart Chain (BEP20)</p>
-      </div>
-
-      <div class="swap-arrow">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
-      </div>
-
-      <div class="field-group">
-        <label>You receive</label>
-        <div class="field receive">
-          <span id="usdt-out" class="receive-amount">—</span>
-          <span class="token usdt-token">
-            <svg width="18" height="18" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#26A17B"/><path d="M17.9 17.4v-.01c-.1.01-1 .06-1.9.06-.76 0-1.62-.04-1.9-.06v.01c-3.35-.15-5.86-.74-5.86-1.44s2.51-1.29 5.86-1.44v2.29c.28.02 1.16.07 1.91.07.92 0 1.8-.06 1.89-.07v-2.29c3.34.15 5.84.74 5.84 1.44s-2.5 1.29-5.84 1.44zM17.9 13.7v-2.05h4.67V8.5H9.43v3.15H14.1v2.05c-3.79.18-6.64.95-6.64 1.87s2.85 1.69 6.64 1.87v6.71h3.8v-6.71c3.78-.18 6.62-.95 6.62-1.87s-2.84-1.69-6.62-1.87z" fill="#fff"/></svg>
-            USDT
-          </span>
+        <div class="swap-arrow">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
         </div>
-        <p class="field-note">Delivered to your wallet instantly</p>
+        <div class="symbol-box">
+          <svg width="36" height="36" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#26A17B"/><path d="M17.9 17.4v-.01c-.1.01-1 .06-1.9.06-.76 0-1.62-.04-1.9-.06v.01c-3.35-.15-5.86-.74-5.86-1.44s2.51-1.29 5.86-1.44v2.29c.28.02 1.16.07 1.91.07.92 0 1.8-.06 1.89-.07v-2.29c3.34.15 5.84.74 5.84 1.44s-2.5 1.29-5.84 1.44zM17.9 13.7v-2.05h4.67V8.5H9.43v3.15H14.1v2.05c-3.79.18-6.64.95-6.64 1.87s2.85 1.69 6.64 1.87v6.71h3.8v-6.71c3.78-.18 6.62-.95 6.62-1.87s-2.84-1.69-6.62-1.87z" fill="#fff"/></svg>
+          <span class="usdt-label">USDT</span>
+        </div>
       </div>
 
       <div class="fee-row">
@@ -105,24 +91,15 @@
 
   <script src="payment.js"></script>
   <script>
-    // Fetch live BTC price and update UI
+    // Fetch live BTC price for rate banner only
     async function updateRate() {
       try {
         const r = await fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd");
         const d = await r.json();
-        const price = d.bitcoin.usd;
-        document.getElementById("btc-rate").textContent = price.toLocaleString();
-        recalc(price);
-
-        document.getElementById("btc-amount").addEventListener("input", () => recalc(price));
+        document.getElementById("btc-rate").textContent = d.bitcoin.usd.toLocaleString();
       } catch {
         document.getElementById("btc-rate").textContent = "—";
       }
-    }
-
-    function recalc(price) {
-      const btc = parseFloat(document.getElementById("btc-amount").value) || 0;
-      document.getElementById("usdt-out").textContent = (btc * price).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) + " USDT";
     }
 
     updateRate();

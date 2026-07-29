@@ -75,6 +75,33 @@ main { flex: 1; padding: 48px 20px 60px; display: flex; flex-direction: column; 
   50% { opacity: .4; }
 }
 
+/* ── Symbol pair ── */
+.swap-pair {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 24px 0;
+}
+
+.symbol-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #e6edf3;
+}
+
+.usdt-label { color: #26a17b; }
+
+.swap-arrow {
+  display: flex;
+  align-items: center;
+  opacity: .6;
+}
+
 /* ── Fields ── */
 .field-group { margin-bottom: 6px; }
 .field-group label { font-size: 12px; color: #8b949e; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 8px; display: block; }
