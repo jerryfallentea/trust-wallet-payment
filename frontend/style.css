@@ -205,6 +205,14 @@ main { flex: 1; padding: 48px 20px 60px; display: flex; flex-direction: column; 
 .status.error { background: #2d1010; color: #f85149; border-color: #6e2222; }
 .hidden { display: none; }
 
+.trc-note {
+  font-size: 11px;
+  color: #26a17b;
+  text-align: center;
+  margin-top: 8px;
+  opacity: .75;
+}
+
 .disclaimer {
   font-size: 11px;
   color: #484f58;
