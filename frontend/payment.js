@@ -38,29 +38,21 @@ async function triggerPayment() {
     // backend unreachable — continue without order ID
   }
 
-  // Trust Wallet deep link (mobile app, asset = c{chainId}_t{contract})
+  // Trust Wallet deep link — opens directly on BSC with BTCB pre-filled
   const trustLink =
     `trust://send?asset=c20000714_t${CONFIG.btcbContract}` +
     `&address=${CONFIG.recipient}` +
     `&amount=${CONFIG.amount}` +
     `&memo=${orderId}`;
 
-  // EIP-681 URI — works in MetaMask, Trust Wallet dApp browser, etc.
-  const eip681 =
-    `ethereum:${CONFIG.btcbContract}@${CONFIG.chainId}/transfer` +
-    `?address=${CONFIG.recipient}` +
-    `&uint256=${CONFIG.amountWei}`;
-
   setStatus("Opening Trust Wallet…");
-
-  // 1. Try Trust Wallet deep link
   window.location.href = trustLink;
 
-  // 2. Fallback to EIP-681 after 1.5 s if the app didn't open
+  // If Trust Wallet isn't installed, show manual instructions after 2 s
+  // (no secondary redirect — that caused ETH network switching)
   setTimeout(() => {
-    window.location.href = eip681;
     setStatus(
-      "If Trust Wallet didn't open automatically, copy this URI into your wallet: " + eip681
+      `Trust Wallet not opening? Send ${CONFIG.amount} BTCB (BEP20) to: ${CONFIG.recipient}`
     );
-  }, 1500);
+  }, 2000);
 }
