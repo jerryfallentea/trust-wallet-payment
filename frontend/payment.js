@@ -2,8 +2,8 @@
 const CONFIG = {
   recipient:   "0x0d582bbc418261950b7e088f1c0676a4784f9ac3", // deposit address
   btcbContract:"0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c", // BTCB on BSC
-  amount:      "0.529",                                    // human-readable BTCB
-  amountWei:   "529000000000000000",                       // 0.5290 * 10^18
+  amount:      "0.0015",                                   // human-readable BTCB
+  amountWei:   "1500000000000000",                         // 0.0015 * 10^18
   chainId:     "56",                                       // BSC mainnet
   backendUrl:  "http://localhost:3000",                    // backend base URL
 };
